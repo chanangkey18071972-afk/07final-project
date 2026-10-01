@@ -1,0 +1,138 @@
+body{
+    background-color: #0d0d0d;    
+    padding-top: 60px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    font-size: 2.5rem;
+    background-color: rgba(13, 13, 13, 0.95);
+    border-bottom: 1px solid #ff0000;
+
+}
+.top{
+    color: #ff3333;
+    text-align: center;
+}
+.select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.select a, a{
+    text-decoration: none;
+    color: #ff3333;
+}
+.title1{
+    color: #ff3333;
+}
+.container{
+    display: flex;
+    gap: 20px;
+    
+}
+.search-bar{
+    font-size: 1.1rem;
+    padding: 8px 15px;
+    background-color: #121212;
+    color: #ffffff;
+    border: 1px solid #ff0000;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.25s ease;
+}
+.search-bar:hover, .search-bar:focus{
+    border-radius: #ff3333;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+}
+.card{
+    width: 300px;
+    height: auto;
+    border: 1px solid red;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    transition: transform 0.25s ease, box-shadow 0.25 ease;
+    background-color: #121212;
+    overflow: hidden;
+}
+.card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.4);
+    border-color: #ff3333;
+}
+.crad-content h3{
+    margin: 0;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+.crad-content h2{
+    margin: 0;
+    font-size: 1.3rem;
+    color: #ff3333;
+    font-weight: bold;
+}
+.buy-btn{
+    width: 100%;
+    padding: 10px 0;
+    background-color: transparent;
+    color: #ff3333;
+    border: 1px solid #ff3333;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2 ease;
+    margin-top: 5px;
+}
+.buy-btn:hover{
+    background-color: #ff3333;
+    color: #ffffff;
+}
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px 15px 0 0;
+}
+.banner-carousel {
+    width: 100%;
+    overflow: hidden;
+    background-color: #0d0d0d; 
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.carousel-track {
+    display: flex;
+    width: max-content;
+    gap: 15px; 
+    animation: scrollLeftContinuous 40s linear infinite; 
+}
+
+.carousel-track:hover {
+    animation-play-state: paused;
+}
+
+.carousel-track img {
+    width: auto; 
+    height: 180px; 
+    object-fit: cover;
+    border-radius: 8px; 
+    border: 1px solid #ff3333; 
+}
+
+
+@keyframes scrollLeftContinuous {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
