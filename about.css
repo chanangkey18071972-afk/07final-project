@@ -1,0 +1,159 @@
+/* 基礎樣式重設 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.logo {
+    color: #ff0000;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a {
+    color: #ff0000;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: #ffffff;
+}
+
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.hero-section {
+    margin-bottom: 60px;
+}
+
+.hero-section h1 {
+    color: #ff0000;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+.story-section {
+    background: #0a0a0a;
+    border: 1px solid #ff0000;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 60px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.1);
+    text-align: left;
+}
+
+.story-section h2 {
+    color: #ff0000;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-left: 4px solid #ff0000;
+    padding-left: 15px;
+}
+
+.story-section p {
+    color: #e0e0e0;
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.feature-card {
+    background: #0e0e0e;
+    border: 1px solid #222222;
+    padding: 30px 20px;
+    border-radius: 6px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff0000;
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.4);
+}
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    color: #ff0000;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #aaaaaa;
+    font-size: 0.95rem;
+}
+
+.cta-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.btn-shop {
+    display: inline-block;
+    background-color: transparent;
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    padding: 12px 35px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-shop:hover {
+    background-color: #ff0000;
+    color: #000000;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #888888;
+    font-size: 14px;
+    border-top: 1px solid #1a1a1a;
+    margin-top: 100px;
+}

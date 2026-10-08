@@ -1,0 +1,115 @@
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.contact-form-container, .contact-info-container {
+    flex: 1;
+    min-width: 300px;
+    background: #0a0a0a;
+    border: 1px solid #222222;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form-container h2, .contact-info-container h2 {
+    color: #ff0000;
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.contact-form-container h2::after, .contact-info-container h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #ff0000;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    color: #cccccc;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #121212;
+    border: 1px solid #333333;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border-color: #ff0000;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.2);
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #ff0000;
+    color: #000000;
+    border: none;
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #cc0000;
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+}
+
+.info-list {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.info-list li {
+    color: #e0e0e0;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+}
+
+.info-list li strong {
+    color: #ff0000;
+    margin-right: 5px;
+}
+
+.map-container {
+    border: 1px solid #333333;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+}
